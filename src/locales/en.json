@@ -1,0 +1,304 @@
+﻿{
+  "nav": {
+    "brand": "RhineFurat",
+    "languageToggle": "Language",
+    "darkModeToggle": "Toggle dark mode",
+    "drawer": {
+      "services": "Services",
+      "expertises": "Expertises",
+      "aboutUs": "About Us",
+      "resources": "Resources",
+      "servicesItems": {
+        "hireDeveloper": "Hire a Developer",
+        "nearshore": "Nearshore Outsourcing",
+        "recruitment": "IT Recruitment"
+      },
+      "expertiseItems": {
+        "frontend": "Front-end",
+        "backend": "Back-end",
+        "fullstack": "Full-stack",
+        "cloud": "Cloud Engineer",
+        "mobile": "Mobile Development",
+        "frameworks": "Frameworks"
+      },
+      "tech": {
+        "frontend": { "html": "HTML", "css": "CSS", "javascript": "JavaScript" },
+        "backend": {
+          "csharp": "C#",
+          "php": "PHP",
+          "cpp": "C++",
+          "python": "Python",
+          "java": "Java",
+          "nodejs": "NodeJS",
+          "mysql": "MySQL"
+        },
+        "mobile": { "flutter": "Flutter", "react": "React", "laravel": "Laravel", "kotlin": "Kotlin" }
+      }
+    }
+  },
+  "languages": {
+    "labels": {
+      "english": "English",
+      "arabic": "العربية",
+      "dutch": "Nederlands",
+      "french": "Français"
+    }
+  },
+  "hero": {
+    "title": "RhineFurat",
+    "subtitle": "A strategic partner for technology-led growth along Europe's Rhine corridor. We bridge visionary leadership with people-first delivery—so every transformation lands with impact.",
+    "primaryCta": "Schedule a Discovery Call",
+    "secondaryCta": "View Case Studies"
+  },
+  "team": {
+    "leadershipHeading": "Leadership at Your Side",
+    "leadershipDescription": "Our senior team works directly with customer stakeholders to translate strategic priorities into measurable programmes. Expect pragmatic roadmaps, cross-functional squads, and crystal-clear communications from kickoff to delivery.",
+    "directoryHeading": "Team Contact Directory",
+    "directoryDescription": "Need to align with Ahmad, Samo, or Rony? Connect with the leaders behind RhineFurat’s engineering delivery, people programmes, and employee enablement.",
+    "members": {
+      "ahmadKayal": {
+        "role": "CTO",
+        "focus": "Leads the engineering roadmap for RhineFurat with a focus on cloud modernization, resilient data flows, and pragmatic delivery guardrails.",
+        "summary": "Your point person for architecture sprints, modernization blueprints, and governance automation across Rhine delta projects."
+      },
+      "osamaKarazi": {
+        "role": "CEO",
+        "focus": "Sets RhineFurat's strategic direction, aligning delivery, people operations, and partnerships so every transformation program stays on schedule.",
+        "summary": "Your contact for executive sponsorship, governance cadence, and high-stakes engagements across the Rhine corridor."
+      },
+      "rony": {
+        "role": "COO",
+        "focus": "Runs RhineFurat's operations, aligning delivery pods, people processes, and day-to-day rhythms so programmes stay on track.",
+        "summary": "Your partner for operational cadence, unblockers, and ensuring every squad has what it needs to deliver."
+      },
+      "angie": {
+        "role": "HR Business Partner",
+        "focus": "Leads day-to-day HR support for client squads, coordinating hiring logistics, onboarding packs, and wellbeing check-ins.",
+        "summary": "Connect with Ainge for talent requests, paperwork, and ensuring every remote hire feels welcome from day one."
+      },
+      "larsVanDijk": {
+        "role": "Chief Technology Officer (Advisory)",
+        "focus": "Guides RhineFurat's digital innovation strategy, overseeing cloud-native platforms and trusted data pipelines for maritime logistics clients."
+      },
+      "sofiaJansen": {
+        "role": "Head of People & Culture",
+        "focus": "Creates talent experiences that help fast-growing partners scale operations across the Rhine delta, focusing on inclusive hiring and compliance."
+      }
+    }
+  },
+  "highlights": {
+    "heading": "Built Around Your Priorities",
+    "whatWeDo": {
+      "heading": "What we do",
+      "text": "We match European companies with skilled developers for full-time remote positions or project-based work — quickly, safely, and under clear contracts."
+    },
+    "transparency": {
+      "heading": "Transparent contracts and clear communication",
+      "points": [
+        "Pre-screened, NDA-protected developers",
+        "Remote collaboration made simple",
+        "Long-term partnership focus"
+      ]
+    },
+    "cards": [
+      {
+        "title": "Industry Expertise",
+        "detail": "Deep domain knowledge in logistics, renewable energy, and high-tech manufacturing across the Netherlands, Germany, and beyond."
+      },
+      {
+        "title": "Partnership Frameworks",
+        "detail": "Flexible engagement models ranging from discovery sprints to multi-year managed services tailored to enterprise needs."
+      },
+      {
+        "title": "Data Integrity",
+        "detail": "ISO-compliant governance with transparent audit trails to keep customers confident in their operational decision-making."
+      }
+    ]
+  },
+  "about": {
+    "heading": "About Us",
+    "text": "RhineFurat is a partner-led consultancy focused on dependable delivery. We combine engineering leadership, people operations, and enablement to help organizations modernize with confidence. From discovery to rollout, our teams align to your priorities and work in your language.",
+    "intro": [
+      "At RhineFurat, we connect ambitious companies with exceptional software developers from around the world. Our focus is on delivering high-quality remote talent at rates you simply won’t find anywhere else in today’s market.",
+      "We believe that great developers deserve great opportunities, and great companies deserve reliable talent. That’s why we manage the full process — from screening and matching to onboarding — so our clients can focus on growing their business.",
+      "With a strong network of experienced professionals, RhineFurat stands for efficiency, transparency, and long-term collaboration. Trust and quality are at the heart of everything we do."
+    ],
+    "highlights": [
+      {
+        "icon": "contracts",
+        "title": "Clear Contracts & NDA",
+        "detail": "Every engagement runs through clear contracts, and every developer signs an NDA — your privacy and data security come first."
+      },
+      {
+        "icon": "shield",
+        "title": "Trust at the Core",
+        "detail": "Our shield-shaped logo represents the protection and trust that define our work and relationships."
+      },
+      {
+        "icon": "partnership",
+        "title": "Managed End-to-End",
+        "detail": "We handle screening, matching, and onboarding so you can focus on outcomes and growth."
+      }
+    ],
+    "missionHeading": "Our Mission",
+    "mission": [
+      "Our mission is to make top-tier development talent accessible to every company, regardless of size or location.",
+      "We build a bridge between global talent and European innovation, helping businesses scale smarter and faster.",
+      "At RhineFurat, we don’t just connect people — we create partnerships that last."
+    ]
+  },
+  "testimonials": {
+    "heading": "What our customers say",
+    "items": [
+      { "quote": "A true partner that delivered outcomes, not just slides.", "author": "Transformation Director, Logistics" },
+      { "quote": "Clear governance and reliable delivery across languages.", "author": "Head of Operations, Energy" },
+      { "quote": "Fast iteration and pragmatic roadmaps that actually stick.", "author": "CTO, Manufacturing" }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": "Email",
+    "countryCode": "Country Code",
+    "phone": "Phone Number",
+    "password": "Password",
+    "message": "Message",
+    "send": "Send",
+    "sent": "Your message has been sent."
+  },
+  "story": {
+    "heading": "Story Across Languages",
+    "description": "RhineFurat meets partners where they are, so our core team communicates strategic plans in English, Arabic, and Dutch without losing nuance or momentum.",
+    "narratives": [
+      {
+        "language": "English",
+        "direction": "ltr",
+        "title": "Scaling transformation with trusted partners",
+        "lead": "CTO Ahmad Kayal architects resilient digital platforms, CEO Samo Karazi sets the course, and COO Rony keeps delivery humming.",
+        "contact": "Reach out to the team for discovery workshops, tailored staffing plans, and multilingual rollout coaching."
+      },
+      {
+        "language": "العربية",
+        "direction": "rtl",
+        "title": "نمكّن التحول الرقمي مع فريق موثوق",
+        "lead": "المدير التقني أحمد كايل يقود خارطة الطريق، والرئيس التنفيذي سامو كارازي يحدد المسار، والرئيس التشغيلي روني يحافظ على انسيابية التنفيذ.",
+        "contact": "تواصل مع الفريق لتنظيم جلسات اكتشاف، وخطط توظيف مخصصة، وتدريب تشغيلي بثلاث لغات."
+      },
+      {
+        "language": "Nederlands",
+        "direction": "ltr",
+        "title": "Digitale groei met lokale experts",
+        "lead": "CTO Ahmad Kayal versnelt moderniseringstrajecten, CEO Samo Karazi zet de koers uit, en COO Rony houdt de dagelijkse operatie draaiende.",
+        "contact": "Plan een gesprek om maatwerktrajecten, staffing en adoptieprogramma’s voor uw organisatie vorm te geven."
+      }
+    ]
+  },
+  "hq": {
+    "heading": "Headquartered in Rotterdam",
+    "description": "RhineFurat operates from Rotterdam, at the heart of the port innovation ecosystem serving the wider Rhine corridor.",
+    "address": "",
+    "hoursLabel": "Office Hours",
+    "hoursValue": "24/7 open",
+    "emailLabel": "Email",
+    "email": "info@rhinefurat.nl",
+    "campusTitle": "Rotterdam Innovation Campus",
+    "campusDescription": "Close to central Rotterdam with fast links across the Randstad."
+  },
+  "footer": {
+    "links": {
+      "linkedin": "LinkedIn",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "copyright": "Copyright {{year}} RhineFurat. All rights reserved.",
+    "kvk": "KvK: 98689339"
+  },
+  "resources": {
+    "title": "Resources",
+    "subtitle": "Guides, case studies, and templates to help you plan, hire, and ship with confidence.",
+    "items": [
+      { "title": "Nearshore Kickoff Checklist", "kind": "Checklist", "summary": "Everything you need to prepare your team for nearshore collaboration in the first 30 days.", "cta": "Download", "href": "#" },
+      { "title": "Hiring Scorecard Template", "kind": "Template", "summary": "Structured criteria to evaluate developers consistently across interviews.", "cta": "Use Template", "href": "#" },
+      { "title": "Case Study: Logistics Platform", "kind": "Case Study", "summary": "How a Rhine corridor operator modernized data flows and reduced incident MTTR by 42%.", "cta": "Read", "href": "#" }
+    ]
+  },
+  "services": {
+    "hireDeveloper": {
+      "title": "Hire a Developer",
+      "subtitle": "Pre-vetted engineers matched to your stack, timezone, and budget — employed compliantly and ready to deliver.",
+      "points": [
+        "Full-time or project-based",
+        "Insurance and compliance handled",
+        "Timezone-aligned (CET±2)",
+        "Transparent pricing and contracts"
+      ],
+      "processTitle": "How it works",
+      "steps": [
+        "Brief and role intake",
+        "Shortlist within 72 hours",
+        "Interviews and technical checks",
+        "Onboarding and continuous support"
+      ],
+      "cta": "Start your brief"
+    },
+    "nearshore": {
+      "title": "Nearshore Outsourcing",
+      "subtitle": "Build capacity fast with nearshore teams that collaborate in your hours and culture, with delivery run from the Rhine delta.",
+      "benefitsTitle": "Why nearshore with RhineFurat",
+      "benefits": [
+        "European time-zone collaboration",
+        "Lower cost-to-impact ratio",
+        "Multilingual delivery (EN/AR/NL)",
+        "Managed onboarding and retention",
+        "ISO-aligned governance"
+      ],
+      "modelsTitle": "Engagement models",
+      "models": [
+        "Dedicated nearshore squad",
+        "Team augmentation",
+        "Managed delivery (outcomes-based)"
+      ],
+      "cta": "Talk to an expert"
+    },
+    "recruitment": {
+      "title": "IT Recruitment",
+      "subtitle": "Permanent and contract placements across engineering, data, cloud, and leadership roles — with a pragmatic, fast process.",
+      "tracksTitle": "Hiring tracks",
+      "tracks": [
+        "Permanent hires",
+        "Contract / Interim",
+        "Executive search (CTO, Heads)"
+      ],
+      "coverageTitle": "Role coverage",
+      "coverage": [
+        "Backend, Frontend, Mobile",
+        "Cloud & DevOps",
+        "Data & AI",
+        "QA & Security"
+      ],
+      "cta": "Book a call"
+    }
+  }
+  ,
+  "tech": {
+    "detail": {
+      "html": {
+        "title": "HTML",
+        "blurb": "The foundation of the web — semantic structure for content and accessibility.",
+        "snippetTitle": "Semantic markup",
+        "code": "<main>\n  <article>\n    <h1>RhineFurat</h1>\n    <p>Hire trusted developers, fast.</p>\n  </article>\n</main>"
+      },
+      "css": {
+        "title": "CSS",
+        "blurb": "Presentation language that brings responsive, accessible designs to life.",
+        "snippetTitle": "Responsive card",
+        "code": ".card{\n  padding:1rem;\n  border-radius:12px;\n  background:linear-gradient(140deg,#1d3557,#457b9d);\n  color:#f1faee;\n}"
+      },
+      "javascript": {
+        "title": "JavaScript",
+        "blurb": "Ubiquitous language of interactive web and cross-platform apps.",
+        "snippetTitle": "Pure JS greeting",
+        "code": "function greet(name){\n  return `Hello, ${name}!`;\n}\nconsole.log(greet('World'));"
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+body {
+  background-image: radial-gradient(circle at top left, rgba(29, 53, 87, 0.08), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(69, 123, 157, 0.1), transparent 45%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Adjust subtle backgrounds in dark mode */
+:root[data-color-mode='dark'] body {
+  background-image: radial-gradient(circle at top left, rgba(12, 18, 31, 0.6), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(24, 39, 61, 0.55), transparent 45%);
+}
+
+.hero {
+  padding: 6rem 0;
+  background: linear-gradient(140deg, rgba(29, 53, 87, 0.95), rgba(69, 123, 157, 0.85)),
+    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80')
+      center/cover;
+  color: #f1faee;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+}
+
+.section-spacing {
+  padding: 4rem 0;
+}
+
+.key-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .hero {
+    padding: 4rem 0;
+  }
+  .hero-overlay {
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  .section-spacing {
+    padding: 2rem 0;
+  }
+}
+
+/* Tech logos marquee */
+.logos-marquee {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 0;
+  border-radius: 12px;
+  background-color: rgba(13, 18, 31, 0.04);
+}
+
+:root[data-color-mode='dark'] .logos-marquee {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.logos-track {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: max-content;
+  animation: rf-scroll-left 30s linear infinite;
+}
+
+.logos-marquee[data-rtl='true'] .logos-track {
+  animation-name: rf-scroll-right;
+}
+
+.logo-item img {
+  height: 48px;
+  opacity: 0.95;
+  filter: saturate(0.95);
+}
+
+@keyframes rf-scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes rf-scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
