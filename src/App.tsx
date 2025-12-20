@@ -22,9 +22,6 @@ import TechLogosSlider from "./components/TechLogosSlider";
 import TechDetailPage from "./pages/TechDetailPage";
 import { SUPPORTED_LANGUAGES, SupportedLanguage, getDirection } from "./i18n";
 
-
-
-
 const FALLBACK_LANGUAGE: SupportedLanguage = "en";
 const SUPPORTED_LANGUAGE_SET = new Set<SupportedLanguage>(SUPPORTED_LANGUAGES);
 
