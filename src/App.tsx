@@ -1,130 +1,31 @@
-import { useEffect } from "react";
-import { Box } from "@mui/material";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+// src/App.tsx
+import { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PageLoader from "./components/PageLoader";
 
-import TopNav from "./components/TopNav";
-import HeroSection from "./components/HeroSection";
-import LeadershipSection from "./components/LeadershipSection";
-import HighlightsSection from "./components/HighlightsSection";
-import LanguageStoriesSection from "./components/LanguageStoriesSection";
-import HeadquartersSection from "./components/HeadquartersSection";
-import SiteFooter from "./components/SiteFooter";
-import BackButton from "./components/BackButton";
-import PhotoSlider from "./components/PhotoSlider";
-import AboutSection from "./components/AboutSection";
-import TestimonialsSection from "./components/TestimonialsSection";
-import ContactFormPage from "./pages/ContactFormPage";
-import HireDeveloperPage from "./pages/HireDeveloperPage";
-import NearshorePage from "./pages/NearshorePage";
-import ITRecruitmentPage from "./pages/ITRecruitmentPage";
-import TechLogosSlider from "./components/TechLogosSlider";
-import TechDetailPage from "./pages/TechDetailPage";
-import { SUPPORTED_LANGUAGES, SupportedLanguage, getDirection } from "./i18n";
+// Lazy Loading الصفحات
+const ContactFormPage = lazy(() => import("./pages/ContactFormPage"));
+const HireDeveloperPage = lazy(() => import("./pages/HireDeveloperPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+const TechDetailPage = lazy(() => import("./pages/TechDetailPage"));
+const ITRecruitmentPage = lazy(() => import("./pages/ITRecruitmentPage"));
+const NearshorePage = lazy(() => import("./pages/NearshorePage"));
+const ResourcesPage = lazy(() => import("./pages/ResourcesPage"));
 
-const FALLBACK_LANGUAGE: SupportedLanguage = "en";
-const SUPPORTED_LANGUAGE_SET = new Set<SupportedLanguage>(SUPPORTED_LANGUAGES);
-
-const resolveLanguage = (language: string | undefined): SupportedLanguage => {
-  if (!language) {
-    return FALLBACK_LANGUAGE;
-  }
-
-  const normalized = language.toLowerCase();
-  if (SUPPORTED_LANGUAGE_SET.has(normalized as SupportedLanguage)) {
-    return normalized as SupportedLanguage;
-  }
-
-  const base = normalized.split("-")[0];
-  if (SUPPORTED_LANGUAGE_SET.has(base as SupportedLanguage)) {
-    return base as SupportedLanguage;
-  }
-
-  return FALLBACK_LANGUAGE;
-};
-
-function App() {
-  const { i18n } = useTranslation();
-  const language = resolveLanguage(i18n.language);
-  const direction = getDirection(language);
-  const isRTL = direction === "rtl";
-  const location = useLocation();
-
-  useEffect(() => {
-    document.documentElement.lang = language;
-    document.documentElement.dir = direction;
-    document.body.dir = direction;
-  }, [direction, language]);
-
-  const handleLanguageChange = (nextLanguage: SupportedLanguage) => {
-    i18n.changeLanguage(nextLanguage);
-  };
-
-  useEffect(() => {
-    if (location.hash === '#about') {
-      setTimeout(() => {
-        const el = document.getElementById('about');
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 0);
-    }
-  }, [location]);
-
+export default function App() {
   return (
-    <Box
-      sx={{
-        direction,
-        textAlign: isRTL ? "right" : "left",
-        backgroundColor: (theme) => theme.palette.background.default,
-      }}
-      dir={direction}
-    >
-      <TopNav
-        language={language}
-        onLanguageChange={handleLanguageChange}
-        isRTL={isRTL}
-      />
-      <BackButton isRTL={isRTL} />
-      <Box component="main">
+    <Router>
+      <Suspense fallback={<PageLoader />}>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <HeroSection isRTL={isRTL} />
-                <PhotoSlider isRTL={isRTL} />
-                <AboutSection isRTL={isRTL} />
-                <TechLogosSlider isRTL={isRTL} />
-                <TestimonialsSection isRTL={isRTL} />
-                <LeadershipSection isRTL={isRTL} />
-                <HighlightsSection isRTL={isRTL} />
-                <HeadquartersSection isRTL={isRTL} />
-              </>
-            }
-          />
-          <Route path="/contact" element={<ContactFormPage isRTL={isRTL} />} />
-          <Route
-            path="/services/hire-developer"
-            element={<HireDeveloperPage isRTL={isRTL} />}
-          />
-          <Route
-            path="/services/nearshore"
-            element={<NearshorePage isRTL={isRTL} />}
-          />
-          <Route
-            path="/services/it-recruitment"
-            element={<ITRecruitmentPage isRTL={isRTL} />}
-          />
-          <Route
-            path="/tech/:slug"
-            element={<TechDetailPage isRTL={isRTL} />}
-          />
+          <Route path="/" element={<ContactPage />} />
+          <Route path="/contactform" element={<ContactFormPage />} />
+          <Route path="/hiredeveloper" element={<HireDeveloperPage />} />
+          <Route path="/techdetail" element={<TechDetailPage />} />
+          <Route path="/itrecruitment" element={<ITRecruitmentPage />} />
+          <Route path="/nearshore" element={<NearshorePage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
         </Routes>
-      </Box>
-      <SiteFooter isRTL={isRTL} />
-    </Box>
+      </Suspense>
+    </Router>
   );
 }
-
-export default App;
